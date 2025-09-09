@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Community Buildersカテゴリ別絵文字</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px auto;
+            max-width: 800px;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 3px solid #FF9800;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+
+        .emoji-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        .emoji-table th {
+            background: linear-gradient(135deg, #FF9800, #FFC107);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .emoji-table th:first-child {
+            border-radius: 8px 0 0 0;
+        }
+
+        .emoji-table th:last-child {
+            border-radius: 0 8px 0 0;
+        }
+
+        .emoji-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e9ecef;
+            vertical-align: top;
+        }
+
+        .emoji-table tr:hover {
+            background-color: rgba(255, 152, 0, 0.05);
+        }
+
+        .emoji-table tr:last-child td:first-child {
+            border-radius: 0 0 0 8px;
+        }
+
+        .emoji-table tr:last-child td:last-child {
+            border-radius: 0 0 8px 0;
+        }
+
+        .category-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .emoji-cell {
+            font-size: 24px;
+            text-align: center;
+            width: 60px;
+        }
+
+        .reason-text {
+            color: #666;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        .alternative-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #17a2b8;
+        }
+
+        .alternative-section h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .alt-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .alt-table th {
+            background: #17a2b8;
+            color: white;
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .alt-table td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .alt-table tr:hover {
+            background-color: rgba(23, 162, 184, 0.05);
+        }
+
+        .note {
+            margin-top: 30px;
+            padding: 15px;
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            color: #856404;
+        }
+
+        .note strong {
+            color: #533f03;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                margin: 20px;
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .emoji-table, .alt-table {
+                font-size: 13px;
+            }
+            
+            .emoji-table th, .emoji-table td, .alt-table th, .alt-table td {
+                padding: 8px 10px;
+            }
+            
+            .emoji-cell {
+                font-size: 20px;
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AWS Community Buildersカテゴリ別絵文字の提案</h1>
+        
+        <table class="emoji-table">
+            <thead>
+                <tr>
+                    <th>カテゴリ</th>
+                    <th>絵文字</th>
+                    <th>理由</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="category-name">AIエンジニアリング</td>
+                    <td class="emoji-cell">🤖</td>
+                    <td class="reason-text">AI・ロボット・機械学習を象徴</td>
+                </tr>
+                <tr>
+                    <td class="category-name">クラウドオペレーション</td>
+                    <td class="emoji-cell">☁️</td>
+                    <td class="reason-text">クラウドの基本的な象徴</td>
+                </tr>
+                <tr>
+                    <td class="category-name">コンテナ</td>
+                    <td class="emoji-cell">📦</td>
+                    <td class="reason-text">パッケージ・コンテナ化を表現</td>
+                </tr>
+                <tr>
+                    <td class="category-name">データ</td>
+                    <td class="emoji-cell">🛢️</td>
+                    <td class="reason-text">データベースを象徴</td>
+                </tr>
+                <tr>
+                    <td class="category-name">開発ツール</td>
+                    <td class="emoji-cell">🛠️</td>
+                    <td class="reason-text">ツール・開発環境を表現</td>
+                </tr>
+                <tr>
+                    <td class="category-name">機械学習</td>
+                    <td class="emoji-cell">🧠</td>
+                    <td class="reason-text">機械学習・AI思考を象徴</td>
+                </tr>
+                <tr>
+                    <td class="category-name">ネットワーキングとコンテンツ配信</td>
+                    <td class="emoji-cell">🌐</td>
+                    <td class="reason-text">グローバルネットワークを表現</td>
+                </tr>
+                <tr>
+                    <td class="category-name">セキュリティ</td>
+                    <td class="emoji-cell">🔒</td>
+                    <td class="reason-text">セキュリティ・保護を象徴</td>
+                </tr>
+                <tr>
+                    <td class="category-name">サーバーレス</td>
+                    <td class="emoji-cell">⚡</td>
+                    <td class="reason-text">高速・効率・サーバーレス処理</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="alternative-section">
+            <h2>代替案</h2>
+            <p style="margin-bottom: 15px; color: #666;">より技術的な表現の場合：</p>
+            
+            <table class="alt-table">
+                <thead>
+                    <tr>
+                        <th>カテゴリ</th>
+                        <th>代替絵文字</th>
+                        <th>意味</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="category-name">AIエンジニアリング</td>
+                        <td class="emoji-cell">🧬</td>
+                        <td class="reason-text">DNA・先端技術</td>
+                    </tr>
+                    <tr>
+                        <td class="category-name">クラウドオペレーション</td>
+                        <td class="emoji-cell">🌩️</td>
+                        <td class="reason-text">雷雲・パワフル</td>
+                    </tr>
+                    <tr>
+                        <td class="category-name">データ</td>
+                        <td class="emoji-cell">💾</td>
+                        <td class="reason-text">データの保存・管理</td>
+                    </tr>
+                    <tr>
+                        <td class="category-name">開発ツール</td>
+                        <td class="emoji-cell">⚙️</td>
+                        <td class="reason-text">歯車・システム</td>
+                    </tr>
+                    <tr>
+                        <td class="category-name">セキュリティ</td>
+                        <td class="emoji-cell">🛡️</td>
+                        <td class="reason-text">シールド・防御</td>
+                    </tr>
+                    <tr>
+                        <td class="category-name">サーバーレス</td>
+                        <td class="emoji-cell">🚀</td>
+                        <td class="reason-text">ロケット・高速処理</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="note">
+            <strong>💡 活用のヒント:</strong> これらの絵文字をタグラベルで使用する場合、CSSの<code>::after</code>疑似要素で追加することで、統一感のあるデザインが作れます。HTMLには絵文字を書かず、CSSで自動的に表示させることで保守性が向上します。
+        </div>
+    </div>
+</body>
+</html>

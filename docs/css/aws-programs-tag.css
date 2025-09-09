@@ -1,0 +1,129 @@
+/* タグ風ラベルの基本スタイル */
+.tag {
+     display: inline-block;
+     padding: 6px 12px;
+     font-size: 13px;
+     font-weight: 600;
+     line-height: 1;
+     border-radius: 16px;
+     text-decoration: none;
+     margin: 4px;
+     white-space: nowrap;
+     transition: all 0.3s ease;
+}
+
+/* AWS Jr. Champion - 緑系グラデーション */
+.tag-aws-jr-champion {
+    background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+    color: white;
+    border: none;
+}
+
+.tag-aws-jr-champion:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+/* AWS Top Engineers - 青系グラデーション */
+.tag-aws-top-engineers {
+    background: linear-gradient(135deg, #2196F3 0%, #03A9F4 100%);
+    color: white;
+    border: none;
+}
+
+.tag-aws-top-engineers:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+}
+
+/* AWS Community Builders - オレンジ系グラデーション */
+.tag-aws-community-builders {
+    background: linear-gradient(135deg, #FF9800 0%, #FFC107 100%);
+    color: white;
+    border: none;
+}
+
+.tag-aws-community-builders:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+}
+
+/* AWS Hero - 紫・ピンク系グラデーション（最高位） */
+.tag-aws-hero {
+    background: linear-gradient(135deg, #9C27B0 0%, #E91E63 100%);
+    color: white;
+    border: none;
+    box-shadow: 0 2px 8px rgba(156, 39, 176, 0.3);
+}
+
+.tag-aws-hero:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(156, 39, 176, 0.4);
+}
+
+
+/* アウトラインバージョン */
+.tag-aws-jr-champion-outline {
+    background-color: transparent;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+.tag-aws-jr-champion-outline:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.tag-aws-top-engineers-outline {
+    background-color: transparent;
+    color: #2196F3;
+    border: 2px solid #2196F3;
+}
+
+.tag-aws-top-engineers-outline:hover {
+    background-color: #2196F3;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+}
+
+.tag-aws-community-builders-outline {
+    background-color: transparent;
+    color: #FF9800;
+    border: 2px solid #FF9800;
+}
+
+.tag-aws-community-builders-outline:hover {
+    background-color: #FF9800;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+}
+
+.tag-aws-hero-outline {
+    background-color: transparent;
+    color: #9C27B0;
+    border: 2px solid #9C27B0;
+}
+
+.tag-aws-hero-outline:hover {
+    background: linear-gradient(135deg, #9C27B0 0%, #E91E63 100%);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(156, 39, 176, 0.4);
+}
+
+/* サイズバリエーション */
+.tag-sm {
+    padding: 4px 8px;
+    font-size: 11px;
+    border-radius: 12px;
+}
+
+.tag-lg {
+    padding: 8px 16px;
+    font-size: 15px;
+    border-radius: 20px;
+}

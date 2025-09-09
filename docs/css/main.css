@@ -1,0 +1,304 @@
+/* リセットCSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* ヘッダー */
+.header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.header h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.header p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* メインコンテンツ */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.components-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.component-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+}
+
+.component-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.component-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.card-header {
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.card-preview {
+    /*margin: 20px 0;*/
+    margin: 0 0 10px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    min-height: 130px;
+}
+
+.preview-label {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.card-actions {
+    display: flex;
+    gap: 12px;
+    /*margin-top: 25px;*/
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.btn-outline:hover {
+    background: #667eea;
+    color: white;
+}
+
+.btn-icon {
+    margin-right: 6px;
+}
+
+/* プレビュー用タグスタイル */
+.tag {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+    border-radius: 16px;
+    text-decoration: none;
+    margin: 4px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.tag-aws-jr-champion {
+    background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+    color: white;
+}
+
+.tag-aws-top-engineers {
+    background: linear-gradient(135deg, #2196F3 0%, #03A9F4 100%);
+    color: white;
+}
+
+.tag-aws-community-builders {
+    background: linear-gradient(135deg, #FF9800 0%, #FFC107 100%);
+    color: white;
+}
+
+.tag-aws-hero {
+    background: linear-gradient(135deg, #9C27B0 0%, #E91E63 100%);
+    color: white;
+    box-shadow: 0 2px 8px rgba(156, 39, 176, 0.3);
+}
+
+.tag-primary {
+    background-color: #007acc;
+    color: white;
+}
+
+.tag-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.tag-warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+/* フッター */
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .components-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .component-card {
+        padding: 20px;
+    }
+    
+    .card-actions {
+        flex-direction: column;
+    }
+    
+    .btn {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/* ステータスバッジ */
+.status-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #28a745;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.status-badge.coming-soon {
+    background: #ffc107;
+    color: #212529;
+}
+
+/* アニメーション */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.component-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.component-card:nth-child(1) { animation-delay: 0.1s; }
+.component-card:nth-child(2) { animation-delay: 0.2s; }
+.component-card:nth-child(3) { animation-delay: 0.3s; }
+.component-card:nth-child(4) { animation-delay: 0.4s; }

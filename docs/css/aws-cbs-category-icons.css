@@ -1,0 +1,101 @@
+/* 各カテゴリに絵文字を自動追加 */
+.tag-aws-ai::after {
+    content: "🤖";
+    margin-left: 6px;
+}
+
+.tag-aws-cloud-ops::after {
+    content: "☁️";
+    margin-left: 6px;
+}
+
+.tag-aws-containers::after {
+    content: "📦";
+    margin-left: 6px;
+}
+
+.tag-aws-data::after {
+    content: "🛢️";
+    margin-left: 6px;
+}
+
+.tag-aws-devtools::after {
+    content: "🛠️";
+    margin-left: 6px;
+}
+
+.tag-aws-ml::after {
+    content: "🧠";
+    margin-left: 6px;
+}
+
+.tag-aws-nw::after {
+    content: "🌐";
+    margin-left: 6px;
+}
+
+.tag-aws-security::after {
+    content: "🔒";
+    margin-left: 6px;
+}
+
+.tag-aws-serverless::after {
+    content: "⚡";
+    margin-left: 6px;
+}
+
+/* 各カテゴリに絵文字を自動追加 */
+.tag-aws-ai-before::before {
+    content: "🤖";
+    margin-left: 6px;
+}
+
+.tag-aws-cloud-ops-before::before {
+    content: "☁️";
+    margin-left: 6px;
+}
+
+.tag-aws-containers-before::before {
+    content: "📦";
+    margin-left: 6px;
+}
+
+.tag-aws-data-before::before {
+    content: "🛢️";
+    margin-left: 6px;
+}
+
+.tag-aws-devtools-before::before {
+    content: "🛠️";
+    margin-left: 6px;
+}
+
+.tag-aws-ml-before::before {
+    content: "🧠";
+    margin-left: 6px;
+}
+
+.tag-aws-nw-before::before {
+    content: "🌐";
+    margin-left: 6px;
+}
+
+.tag-aws-security-before::before {
+    content: "🔒";
+    margin-left: 6px;
+}
+
+.tag-aws-serverless-before::before {
+    content: "⚡";
+    margin-left: 6px;
+}
+
+.tag-custom::after {
+    content: var(--emoji, "");
+    margin-left: 6px;
+}
+
+.tag-custom-before::before {
+    content: var(--emoji, "");
+    margin-left: 6px;
+}
