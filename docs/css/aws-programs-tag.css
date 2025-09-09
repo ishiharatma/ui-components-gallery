@@ -12,14 +12,14 @@
      transition: all 0.3s ease;
 }
 
-/* AWS Jr. Champion - 緑系グラデーション */
-.tag-aws-jr-champion {
+/* AWS Jr. Champions - 緑系グラデーション */
+.tag-aws-jr-champions {
     background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
     color: white;
     border: none;
 }
 
-.tag-aws-jr-champion:hover {
+.tag-aws-jr-champions:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
 }
@@ -63,13 +63,13 @@
 
 
 /* アウトラインバージョン */
-.tag-aws-jr-champion-outline {
+.tag-aws-jr-champions-outline {
     background-color: transparent;
     color: #4CAF50;
     border: 2px solid #4CAF50;
 }
 
-.tag-aws-jr-champion-outline:hover {
+.tag-aws-jr-champions-outline:hover {
     background-color: #4CAF50;
     color: white;
     transform: translateY(-2px);
